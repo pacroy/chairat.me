@@ -1,0 +1,17 @@
+<RoutingRules>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>abapci</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>blogs.sap.com</HostName>
+            <ReplaceKeyPrefixWith>2017/11/11/continuous-integration-in-abap-using-jenkins/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Redirect>
+            <HostName>medium.com</HostName>
+            <ReplaceKeyPrefixWith>pacroy/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+</RoutingRules>
