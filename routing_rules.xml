@@ -9,6 +9,15 @@
         </Redirect>
     </RoutingRule>
     <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>aws</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>778097775924.signin.aws.amazon.com</HostName>
+            <ReplaceKeyPrefixWith>console/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
         <Redirect>
             <HostName>medium.com</HostName>
             <ReplaceKeyPrefixWith>pacroy/</ReplaceKeyPrefixWith>
