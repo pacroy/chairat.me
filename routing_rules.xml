@@ -30,6 +30,16 @@
             <ReplaceKeyPrefixWith>pacroy/developing-apis-in-abap-just-rest-not-odata-d91cf899f7d3/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>jenkins</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>medium.com</HostName>
+            <Protocol>https</Protocol>
+            <ReplaceKeyWith>pacroy/search?q=Jenkins</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
     
     <!-- Default Rules -->
     <RoutingRule>
