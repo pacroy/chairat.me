@@ -1,4 +1,5 @@
 <RoutingRules>
+    <!-- Short URLs -->
     <RoutingRule>
         <Condition>
             <KeyPrefixEquals>abapci</KeyPrefixEquals>
@@ -17,6 +18,17 @@
             <ReplaceKeyPrefixWith>console/</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>abaprestfulapi</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>medium.com</HostName>
+            <ReplaceKeyPrefixWith>pacroy/developing-apis-in-abap-just-rest-not-odata-d91cf899f7d3/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    
+    <!-- Default Route -->
     <RoutingRule>
         <Redirect>
             <HostName>medium.com</HostName>
