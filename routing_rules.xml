@@ -37,7 +37,17 @@
         <Redirect>
             <HostName>medium.com</HostName>
             <Protocol>https</Protocol>
-            <ReplaceKeyWith>pacroy/search?q=Jenkins</ReplaceKeyWith>
+            <ReplaceKeyPrefixWith>pacroy/jenkins/home/</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>scp</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>medium.com</HostName>
+            <Protocol>https</Protocol>
+            <ReplaceKeyPrefixWith>pacroy/scp/home</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
     
