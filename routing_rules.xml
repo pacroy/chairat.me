@@ -70,6 +70,16 @@
             <ReplaceKeyPrefixWith>pacroy/git/home</ReplaceKeyPrefixWith>
         </Redirect>
     </RoutingRule>
+    <RoutingRule>
+        <Condition>
+            <KeyPrefixEquals>docker</KeyPrefixEquals>
+        </Condition>
+        <Redirect>
+            <HostName>medium.com</HostName>
+            <Protocol>https</Protocol>
+            <ReplaceKeyPrefixWith>pacroy/docker/home</ReplaceKeyPrefixWith>
+        </Redirect>
+    </RoutingRule>
     
     <!-- Default Rules -->
     <RoutingRule>
